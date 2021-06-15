@@ -1,13 +1,29 @@
-# Tribe\Storage\AwsS3
+# Tribe Storage: AWS S3 Adapter
 
 ![php 7.3+](https://img.shields.io/badge/php-min%207.3-red.svg)
 
-The AWS S3 adapter for the [Tribe Storage](https://github.com/moderntribe/tribe-storage) WordPress plugin. 
+The AWS S3 adapter for the [Tribe Storage](https://github.com/moderntribe/tribe-storage) WordPress plugin.
 This adapter is meant to be configured and installed by **developers**.
 
-## Installation
+## Installation Composer v1
 
-Note: This also installs the Tribe Storage plugin.
+Note: This also automatically installs the Tribe Storage plugin.
+
+Add the following to the composer.json `repositories` object:
+
+```json
+  "repositories": [
+  {
+    "type": "vcs",
+    "url": "git@github.com:moderntribe/tribe-storage-aws-s3.git"
+  },
+  {
+    "type": "vcs",
+    "url": "git@github.com:moderntribe/tribe-storage.git"
+  },
+]
+```
+Then run:
 
 ```bash
 composer require moderntribe/tribe-storage-aws-s3
