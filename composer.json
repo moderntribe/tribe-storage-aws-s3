@@ -1,11 +1,6 @@
 {
   "name": "moderntribe/tribe-storage-aws-s3",
   "description": "Tribe Storage Adapter for AWS S3 SDK v3.x",
-  "require": {
-    "php": "^7.3",
-    "moderntribe/tribe-storage": "^1.0",
-    "league/flysystem-aws-s3-v3": "^1.0"
-  },
   "minimum-stability": "dev",
   "prefer-stable": true,
   "repositories": [
@@ -14,6 +9,12 @@
       "url": "git@github.com:moderntribe/tribe-storage.git"
     }
   ],
+  "require": {
+    "php": "^7.3",
+    "php-di/php-di": "^6.0",
+    "moderntribe/tribe-storage": "^1.0",
+    "league/flysystem-aws-s3-v3": "^1.0"
+  },
   "require-dev": {
     "brain/monkey": "2.*",
     "phpunit/phpunit": "^9",
@@ -23,7 +24,10 @@
   "autoload": {
     "psr-4": {
       "Tribe\\Storage\\Adapters\\": "src"
-    }
+    },
+    "files": [
+      "config.php"
+    ]
   },
   "autoload-dev": {
     "psr-4": {
