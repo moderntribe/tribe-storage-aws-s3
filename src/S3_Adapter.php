@@ -7,7 +7,7 @@ use League\Flysystem\AdapterInterface;
 use League\Flysystem\AwsS3v3\AwsS3Adapter;
 
 /**
- * The S3 Flysystem bridge adapter.
+ * The AWS S3 Flysystem bridge adapter.
  *
  * @package Tribe\Storage\Adapters
  */
