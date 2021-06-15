@@ -1,5 +1,6 @@
 # Tribe Storage: AWS S3 Adapter
 
+[![PHPCS + Unit Tests](https://github.com/moderntribe/tribe-storage-aws-s3/actions/workflows/pull-request.yml/badge.svg)](https://github.com/moderntribe/tribe-storage-aws-s3/actions/workflows/pull-request.yml)
 ![php 7.3+](https://img.shields.io/badge/php-min%207.3-red.svg)
 
 The AWS S3 adapter for the [Tribe Storage](https://github.com/moderntribe/tribe-storage) WordPress plugin.
