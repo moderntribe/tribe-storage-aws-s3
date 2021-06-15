@@ -24,10 +24,7 @@
   "autoload": {
     "psr-4": {
       "Tribe\\Storage\\Adapters\\": "src"
-    },
-    "files": [
-      "config.php"
-    ]
+    }
   },
   "autoload-dev": {
     "psr-4": {
