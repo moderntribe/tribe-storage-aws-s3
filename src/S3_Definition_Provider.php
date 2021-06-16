@@ -7,7 +7,7 @@ use DI\Definition\Source\DefinitionArray;
 use DI\Definition\Source\DefinitionSource;
 
 /**
- * PHP-DI Definitions for AWS S3
+ * PHP-DI Definitions for AWS S3.
  *
  * @package Tribe\Storage\Adapters
  */

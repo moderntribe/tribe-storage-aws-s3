@@ -14,15 +14,15 @@ Add the following to the composer.json `repositories` object:
 
 ```json
   "repositories": [
-  {
-    "type": "vcs",
-    "url": "git@github.com:moderntribe/tribe-storage-aws-s3.git"
-  },
-  {
-    "type": "vcs",
-    "url": "git@github.com:moderntribe/tribe-storage.git"
-  },
-]
+      {
+        "type": "vcs",
+        "url": "git@github.com:moderntribe/tribe-storage-aws-s3.git"
+      },
+      {
+        "type": "vcs",
+        "url": "git@github.com:moderntribe/tribe-storage.git"
+      },
+  ]
 ```
 Then run:
 
@@ -69,8 +69,10 @@ testing suite.
 
 #### Run Unit Tests
 
-- composer install
-- ./vendor/bin/phpunit
+```bash
+$ composer install
+$ ./vendor/bin/phpunit
+```
 
 ## More Resources:
 
