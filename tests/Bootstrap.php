@@ -20,17 +20,16 @@ define( 'VENDOR_DIR', __DIR__ . '/../vendor' );
  * @throws \Exception
  */
 function tribe_storage(): Core {
-	$builder = new ContainerBuilder();
+	$builder       = new ContainerBuilder();
+	$plugin_loader = Plugin_Loader::get_instance();
 
 	// Load plugin container definitions
-	$plugin_definitions = Plugin_Loader::get_instance()->get_definitions();
-
-	foreach ( $plugin_definitions as $definition_provider ) {
+	foreach ( $plugin_loader->definition_providers() as $definition_provider ) {
 		$builder->addDefinitions( $definition_provider->get_definitions() );
 	}
 
 	$builder->addDefinitions( VENDOR_DIR . '/moderntribe/tribe-storage/config.php' );
 	$container = $builder->build();
 
-	return Core::instance( $container );
+	return Core::instance( $container, $plugin_loader );
 }
