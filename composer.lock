@@ -846,16 +846,16 @@
         },
         {
             "name": "moderntribe/tribe-storage",
-            "version": "v2.0.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moderntribe/tribe-storage.git",
-                "reference": "593b8523fc72ec59545b16c967e580bdfcbb04cb"
+                "reference": "6dfc6fa42430967671e5cfb96e87f159dde663ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moderntribe/tribe-storage/zipball/593b8523fc72ec59545b16c967e580bdfcbb04cb",
-                "reference": "593b8523fc72ec59545b16c967e580bdfcbb04cb",
+                "url": "https://api.github.com/repos/moderntribe/tribe-storage/zipball/6dfc6fa42430967671e5cfb96e87f159dde663ee",
+                "reference": "6dfc6fa42430967671e5cfb96e87f159dde663ee",
                 "shasum": ""
             },
             "require": {
@@ -896,10 +896,10 @@
             ],
             "description": "A WordPress plugin to upload files to many different storage types like Azure, s3, DO Spaces",
             "support": {
-                "source": "https://github.com/moderntribe/tribe-storage/tree/v2.0.1",
+                "source": "https://github.com/moderntribe/tribe-storage/tree/v2.0.2",
                 "issues": "https://github.com/moderntribe/tribe-storage/issues"
             },
-            "time": "2021-06-20T01:33:11+00:00"
+            "time": "2021-06-21T18:05:37+00:00"
         },
         {
             "name": "mtdowling/jmespath.php",
