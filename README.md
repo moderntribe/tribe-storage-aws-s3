@@ -8,7 +8,9 @@ This adapter is meant to be configured and installed by **developers**.
 
 ## Installation Composer v1
 
-Note: This also automatically installs the Tribe Storage plugin.
+Note: This also automatically installs the Tribe Storage plugin, ensure you have configured 
+[Composer Installers](https://getcomposer.org/doc/faqs/how-do-i-install-a-package-to-a-custom-path-for-my-framework.md#how-do-i-install-a-package-to-a-custom-path-for-my-framework-) 
+for WordPress plugins.
 
 Add the following to the composer.json `repositories` object:
 
@@ -35,7 +37,7 @@ composer require moderntribe/tribe-storage-aws-s3
 Define the adapter, and your bucket name in `wp-config.php`:
 
 ```php
-define( 'TRIBE_STORAGE_ADAPTER', 'Tribe\Storage\Adapters\S3_Adapter' );
+define( 'TRIBE_STORAGE_ADAPTER', \Tribe\Storage\Adapters\S3_Adapter::class );
 define( 'TRIBE_STORAGE_S3_BUCKET', 'mybucketname' );
 ```
 
@@ -55,7 +57,8 @@ define( 'TRIBE_STORAGE_S3_OPTIONS', [
 Define the URL of the CDN or the public URL for your bucket in `wp-config.php`:
 
 ```php
-define( 'TRIBE_STORAGE_URL', 'https://example.com/wp-content/uploads/' . TRIBE_STORAGE_S3_BUCKET );
+// Ideally this should be a CDN URL
+define( 'TRIBE_STORAGE_URL', 'https://s3-us-east-1.amazonaws.com/bucket/' . TRIBE_STORAGE_S3_BUCKET );
 ```
 
 Full S3 client configuration options are available via
@@ -77,4 +80,5 @@ $ ./vendor/bin/phpunit
 ## More Resources:
 
 - [Tribe Storage Documentation](https://github.com/moderntribe/tribe-storage)
+- [Tribe Storage Statically.io CDN](https://github.com/moderntribe/tribe-storage-statically-cdn)
 - [Modern Tribe](https://tri.be/)
