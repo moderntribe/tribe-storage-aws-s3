@@ -1,8 +1,26 @@
 {
   "name": "moderntribe/tribe-storage-aws-s3",
   "description": "Tribe Storage Adapter for AWS S3 SDK v3.x",
-  "minimum-stability": "dev",
-  "prefer-stable": true,
+  "keywords": [
+    "moderntribe",
+    "tribe-storage",
+    "tribe-storage-adapter",
+    "flysystem",
+    "s3",
+    "aws-s3",
+    "wordpress"
+  ],
+  "authors": [
+    {
+      "name": "Justin Frydman",
+      "role": "Developer"
+    },
+    {
+      "name": "Modern Tribe",
+      "email": "admin@tri.be",
+      "homepage": "https://tri.be"
+    }
+  ],
   "repositories": [
     {
       "type": "vcs",
@@ -41,5 +59,7 @@
     "platform": {
       "php": "7.3.0"
     }
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
